@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cevicheria Mi Rey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --mar-infinito: rgb(87, 87, 85);
+            --valle-dorado: rgb(230, 163, 12);
+            --petalo-girasol: rgb(237, 195, 109);
+            --azul-atlantico: rgb(108, 149, 189);
+            --azul-atlantico2: rgb(34, 79, 123);
+            --azul-marymar: rgb(182, 235, 252);
+            --fondo-nicepage: rgb(249, 246, 242);
+            --white: rgb(254, 252, 248);
+            /* fuentes */
+            --font-caveat: 'Caveat', cursive;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(30, 131, 160, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            background-image: url(assets/fondobody.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        main {
+            margin-top: 3rem;
+            width: 90%;
+        }
+        
+        .platos {
+            display: grid;
+            gap: 2.2rem;
+            grid-auto-rows: 36rem;
+            grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+        }
+        
+        .platos__plato {
+            background-color: var(--white);
+            height: 455px;
+            width: 335px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            box-shadow: 3px 3px 10px 5px var(--azul-atlantico);
+        }
+        
+        header {
+            /* background-image: url(assets/fondoheader.png); */
+            margin-top: 3.5em;
+            width: 100%;
+            display: flex;
+        }
+        
+        header img {
+            width: 90%;
+            height: 450px;
+            margin: auto;
+        }
+        
+        header h1 {
+            letter-spacing: 2px;
+        }
+        
+        header h3 {
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            letter-spacing: 2px;
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+            color: var(--white);
+            font-size: 2em;
+        }
+        
+        div h3 {
+            color: var(--azul-atlantico2);
+            margin-left: 1.1em;
+            text-transform: uppercase;
+        }
+        
+        img {
+            width: 290px;
+            height: 230px;
+            margin: 1.3em;
+            border-radius: 10px;
+        }
+        
+        div p {
+            display: inline-block;
+            margin: 1.3em;
+            width: 295px;
+        }
+        
+        strong {
+            margin: 1.3em;
+            color: rgb(180, 75, 15);
+        }
+        
+        footer {
+            margin-top: 10em;
+            background-color: var(--mar-infinito);
+            width: 100%;
+            padding: 1rem;
+            background: rgb(2, 0, 36);
+        }
+        
+        footer p {
+            color: var(--white);
+            font-size: .8em;
+        }
+        /*  hover   */
+        
+        .platos__plato:hover {
+            box-shadow: 5px 5px 10px 5px var(--azul-atlantico2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="assets/fondoheader.png" alt="fondoheader">
+    </header>
+    <main>
+        <h2 align="center">Platos a la carta</h2>
+        <div class="platos">
+
+            <div class="platos__plato">
+                <img src="assets/cevichePeruano.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>ceviche peruano</h3>
+                    <p>Preparado con pescado fresco, limones, cebollas, tomates, aguacates, ajíes picantes, y cilantro fresco.</p>
+                    <strong>$ 6.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/encebollado.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>Encebollado</h3>
+                    <p>Preparado con albacora, yuca, tomate, cebolla colorada, cilantro, ají en polvo, comino y otras especias</p>
+                    <strong>$ 3.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/cevicheConcha.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>ceviche de concha</h3>
+                    <p>Preparado con conchas negras, limones, cebollas, tomates, aguacates, ajíes picantes, y cilantro fresco.</p>
+                    <strong>$ 6.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/chaulafan.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>chaulafán</h3>
+                    <p>Preparado con arroz, pollo, tocino, cebolla, ajo, pimientos, arvejas, zanahorias, huevos revueltos, pasas, especias y hierbas.</p>
+                    <strong>$ 3.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/bandera.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>bandera</h3>
+                    <p>Preparado con camarones, conchas, guata, arroz, aguacate, tomates, cebollas, ajíes, pimientos, zanahorias, especias y hierbas.</p>
+                    <strong>$ 7.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/cevicheLangostino.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>ceviche de langostinos</h3>
+                    <p>Preparado con langostinos, cebolla, jugo de limón, cilantro, aguacate, ajíes, ajo, y aceite de oliva.</p>
+                    <strong>$ 3.50</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/cevicheCamaron.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>ceviche de camarón</h3>
+                    <p>Preparado con camarones en jugo de limón, naranja, cebolla, tomates, salsa de tomate y cilantro.</p>
+                    <strong>$ 6.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/camaronApanado.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>camarón apanado</h3>
+                    <p>Preparado con camarones, huevos, pan rallado, harina, ajos, condimentos, mostaza, aguacate, cebolla y papas fritas.</p>
+                    <strong>$ 6.00</strong>
+                </div>
+            </div>
+
+            <div class="platos__plato">
+                <img src="assets/pulpoApanado.jpg" alt="plato__img-cevicheperuano">
+                <div class="platos__platos-contain">
+                    <h3>pulpo a la gallega</h3>
+                    <p>Preparado con pulpo, huevos, patatas gallegas, sal gruesa, ajos, condimentos, pimentón dulce, aguacate, cebolla y papas fritas.</p>
+                    <strong>$ 6.00</strong>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p align="center">Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
